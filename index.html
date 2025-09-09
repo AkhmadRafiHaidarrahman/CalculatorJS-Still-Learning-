@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="bg-[url(caleb-george-pH88tHG-1yw-unsplash.jpg)] bg-center bg-cover bg-no-repeat flex w-full items-center justify-center flex-col h-screen">
+        <h1 class="font-serif text-2xl">Calculator</h1>
+        <div class="bg-transparent backdrop-blur-sm w-80 h-max p-4 shadow-sm rounded flex flex-col shadow-black">
+            <input type="text" value="0" id="input" class="w-full h-12 mb-4 p-2 text-right bg-white bg-opacity-50 rounded" readonly />
+            <div class="grid grid-cols-3 gap-2">
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">7</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">8</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">9</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">4</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">5</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">6</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">1</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">2</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">3</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">-</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">+</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">/</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100">C</button>
+                <button class="btn bg-red-50 p-4 rounded hover:bg-red-100 col-span-2">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const btn = document.querySelectorAll(".btn");
 const input = document.getElementById("input");
 const nmbr = document.querySelectorAll(".btn-nbr") 
@@ -45,3 +46,29 @@ btnequals.addEventListener("click", function(){
 //   default:
 //     statements
 // }
+=======
+const btn = document.querySelectorAll(".btn");
+const input = document.getElementById("input");
+
+btn.forEach((button) => {
+    button.addEventListener("click", function() {
+        const value = button.textContent;
+
+        switch(value) {
+            case "=":
+                try {
+                    input.value = eval(input.value);
+                } catch(error) {
+                    input.value = "Error";
+                }
+                break;
+            case "C":
+                input.value = "0";
+                break;
+            default:
+                input.value += value;
+        }
+    });
+});
+
+>>>>>>> cb951643f83280fe277755142f246dacce55754f
